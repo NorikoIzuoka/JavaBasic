@@ -11,9 +11,14 @@ public class PTra02_10 {
 		int moneyInHand = 1000;	// 所持金
 		int coffee = 120;	// コーヒーの値段
 		int snack = 200;	// スナック菓子
+		double sum=(coffee*2 + snack)*1.08;
 
-		/*
-		 * ●一本120円（税別）の缶コーヒーを2本
+		int sum2 = (int) sum;
+		System.out.println(moneyInHand - sum2);
+
+
+
+		/*●一本120円（税別）の缶コーヒーを2本
 		 * ●一袋200円（税別）のスナック菓子を1袋
 		 *
 		 * ★ 上記の商品を購入したときの所持金を出力してください
