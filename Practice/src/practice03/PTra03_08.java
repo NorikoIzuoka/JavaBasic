@@ -24,11 +24,27 @@ public class PTra03_08 {
 		int num = scanner.nextInt();
 
 		int money = 1000;	// 所持金
+		  switch (num) {
+          case 1:
+        	  money = money - 150;
+              System.out.println("オレンジジュース");
+              break;
+          case 2:
+        	  money = money - 160;
+              System.out.println("リンゴジュース");
+              break;
+          case 3:
+        	  money = money - 200;
+              System.out.println("コーヒー");
+              break;
+		  }
+
+          System.out.println("所持金: " + money);
 
 		//---------------------ここから本題-----------------------
 		/*
 		 * ★ 以下の仕様に沿ってプログラムを完成させてください
-		 *
+		 int money
 		 * ●入力された値に対応した商品を購入
 		 * ●所持金から、対応した商品の値段分を引く
 		 * ●最後に所持金を表示してプログラム終了
